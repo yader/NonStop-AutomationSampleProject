@@ -1,0 +1,85 @@
+<acceptance-test-run title="Adding a new contact" name="Adding a new contact" steps="5" successful="5" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="12495" timestamp="2015-02-26T20:03:56.480+02:00">
+  <user-story id="AddApplications" name="Add applications" path="stories/applications/AddApplications.story"/>
+  <tags>
+    <tag name="Applications" type="capability"/>
+    <tag name="Add applications" type="story"/>
+    <tag name="Applications/Add applications" type="story"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0"/>
+    </datasets>
+    <headers>
+      <header>title</header>
+      <header>email</header>
+      <header>phone</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>Test111</value>
+        <value>test@test.test</value>
+        <value>0987654321</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {title=Test111, email=test@test.test, phone=0987654321}" result="SUCCESS">
+    <test-group name="Given Main page is opened" result="SUCCESS">
+      <screenshots>
+        <screenshot image="0cd863ab67cbd891aff83fafb3e51a7e_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="8003">
+        <screenshots>
+          <screenshot image="0cd863ab67cbd891aff83fafb3e51a7e_NONE.png"/>
+        </screenshots>
+        <description>Open main page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When User clicks create new contact button" result="SUCCESS">
+      <screenshots>
+        <screenshot image="0cd863ab67cbd891aff83fafb3e51a7e_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="489">
+        <screenshots>
+          <screenshot image="0cd863ab67cbd891aff83fafb3e51a7e_NONE.png"/>
+          <screenshot image="bf141df0da331fcc95dd7c1f4cd03222_NONE.png"/>
+        </screenshots>
+        <description>Click create button</description>
+      </test-step>
+    </test-group>
+    <test-group name="And User fill fields with title {Test111} email {test@test.test} and phone number {0987654321}" result="SUCCESS">
+      <screenshots>
+        <screenshot image="bf141df0da331fcc95dd7c1f4cd03222_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="1887">
+        <screenshots>
+          <screenshot image="bf141df0da331fcc95dd7c1f4cd03222_NONE.png"/>
+          <screenshot image="4ec2a07755d3be7430b6a5ada19ca8c0_NONE.png"/>
+        </screenshots>
+        <description>Fill in form: &lt;span class=&apos;step-parameter&apos;&gt;Test111, test@test.test, 0987654321&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="And Submit create form" result="SUCCESS">
+      <screenshots>
+        <screenshot image="4ec2a07755d3be7430b6a5ada19ca8c0_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="556">
+        <screenshots>
+          <screenshot image="4ec2a07755d3be7430b6a5ada19ca8c0_NONE.png"/>
+          <screenshot image="5eeddb202182ef977c0f5a7f8bb4cf28_NONE.png"/>
+        </screenshots>
+        <description>Submit form</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then New contact {Test111} created and displayed on main page" result="SUCCESS">
+      <screenshots>
+        <screenshot image="5eeddb202182ef977c0f5a7f8bb4cf28_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="260">
+        <screenshots>
+          <screenshot image="5eeddb202182ef977c0f5a7f8bb4cf28_NONE.png"/>
+        </screenshots>
+        <description>Is contact present: &lt;span class=&apos;step-parameter&apos;&gt;Test111&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+  </test-group>
+</acceptance-test-run>

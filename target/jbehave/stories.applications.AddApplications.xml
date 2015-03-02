@@ -1,0 +1,38 @@
+<story path="stories/applications/AddApplications.story" title="">
+<scenario keyword="Scenario:" title="Adding a new contact">
+<examples keyword="Examples:">
+<step>Given Main page is opened</step>
+<step>When User clicks create new contact button</step>
+<step>And User fill fields with title &lt;title&gt; email &lt;email&gt; and phone number &lt;phone&gt;</step>
+<step>And Submit create form</step>
+<step>Then New contact &lt;title&gt; created and displayed on main page</step>
+<parameters>
+<names><name>title</name><name>email</name><name>phone</name></names>
+<values><value>Test111</value><value>test@test.test</value><value>0987654321</value></values>
+</parameters>
+
+<example keyword="Example:">{title=Test111, email=test@test.test, phone=0987654321}</example>
+<step outcome="successful">Given Main page is opened</step>
+<step outcome="successful">When User clicks create new contact button</step>
+<step outcome="successful">And User fill fields with title <parameter>Test111</parameter> email <parameter>test@test.test</parameter> and phone number <parameter>0987654321</parameter></step>
+<step outcome="successful">And Submit create form</step>
+<step outcome="successful">Then New contact <parameter>Test111</parameter> created and displayed on main page</step>
+</examples>
+</scenario>
+<scenario keyword="Scenario:" title="Deleting contact">
+<examples keyword="Examples:">
+<step>Given Main page is opened</step>
+<step>When Click delete buttn for contact &lt;contact&gt;</step>
+<step>Then New contact &lt;contact&gt; deleted and not displayed on main page</step>
+<parameters>
+<names><name>contact</name></names>
+<values><value>Test111</value></values>
+</parameters>
+
+<example keyword="Example:">{contact=Test111}</example>
+<step outcome="successful">Given Main page is opened</step>
+<step outcome="successful">When Click delete buttn for contact <parameter>Test111</parameter></step>
+<step outcome="successful">Then New contact <parameter><parameter>Test111</parameter></parameter> deleted and not displayed on main page</step>
+</examples>
+</scenario>
+</story>

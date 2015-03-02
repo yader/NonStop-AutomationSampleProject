@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>stories.applications.AddApplications</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+<div class="story">
+<h1></h1>
+<div class="path">stories/applications/AddApplications.story</div>
+<div class="scenario">
+<h2>Scenario: Adding a new contact</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given Main page is opened</div>
+<div class="step">When User clicks create new contact button</div>
+<div class="step">And User fill fields with title &lt;title&gt; email &lt;email&gt; and phone number &lt;phone&gt;</div>
+<div class="step">And Submit create form</div>
+<div class="step">Then New contact &lt;title&gt; created and displayed on main page</div>
+<table>
+<thead>
+<tr>
+<th>title</th><th>email</th><th>phone</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>Test111</td><td>test@test.test</td><td>0987654321</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {title=Test111, email=test@test.test, phone=0987654321}</h3>
+<div class="step successful">Given Main page is opened</div>
+<div class="step successful">When User clicks create new contact button</div>
+<div class="step successful">And User fill fields with title <span class="step parameter">Test111</span> email <span class="step parameter">test@test.test</span> and phone number <span class="step parameter">0987654321</span></div>
+<div class="step successful">And Submit create form</div>
+<div class="step successful">Then New contact <span class="step parameter">Test111</span> created and displayed on main page</div>
+</div>
+</div>
+<div class="scenario">
+<h2>Scenario: Deleting contact</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given Main page is opened</div>
+<div class="step">When Click delete buttn for contact &lt;contact&gt;</div>
+<div class="step">Then New contact &lt;contact&gt; deleted and not displayed on main page</div>
+<table>
+<thead>
+<tr>
+<th>contact</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>Test111</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {contact=Test111}</h3>
+<div class="step successful">Given Main page is opened</div>
+<div class="step successful">When Click delete buttn for contact <span class="step parameter">Test111</span></div>
+<div class="step successful">Then New contact <span class="step parameter"><span class="step parameter">Test111</span></span> deleted and not displayed on main page</div>
+</div>
+</div>
+</div>
+
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

@@ -1,0 +1,22 @@
+{"xref": {
+  "whenMade": 1424973854347,
+  "createdBy": "JBehave",
+  "metaFilter": "-ignore",
+  "meta": [],
+  "stories": [
+    {
+      "description": "",
+      "narrative": "",
+      "name": "AddApplications.story",
+      "path": "stories/applications/AddApplications.story",
+      "html": "stories.applications.AddApplications.html",
+      "meta": "",
+      "scenarios": "Scenario:Adding a new contact\u000aGiven Main page is opened\u000aWhen User clicks create new contact button\u000aAnd User fill fields with title <title> email <email> and phone number <phone>\u000aAnd Submit create form\u000aThen New contact <title> created and displayed on main page\u000a\u000a\u000aScenario:Deleting contact\u000aGiven Main page is opened\u000aWhen Click delete buttn for contact <contact>\u000aThen New contact <contact> deleted and not displayed on main page\u000a\u000a\u000a",
+      "passed": true,
+      "pending": false,
+      "started": 1424973836425,
+      "duration": 15154
+    }
+  ],
+  "stepMatches": []
+}}

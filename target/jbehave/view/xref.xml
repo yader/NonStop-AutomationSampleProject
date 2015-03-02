@@ -1,0 +1,36 @@
+<xref>
+  <whenMade>1424973854347</whenMade>
+  <createdBy>JBehave</createdBy>
+  <metaFilter>-ignore</metaFilter>
+  <meta/>
+  <stories>
+    <story>
+      <description></description>
+      <narrative></narrative>
+      <name>AddApplications.story</name>
+      <path>stories/applications/AddApplications.story</path>
+      <html>stories.applications.AddApplications.html</html>
+      <meta></meta>
+      <scenarios>Scenario:Adding a new contact
+Given Main page is opened
+When User clicks create new contact button
+And User fill fields with title &lt;title&gt; email &lt;email&gt; and phone number &lt;phone&gt;
+And Submit create form
+Then New contact &lt;title&gt; created and displayed on main page
+
+
+Scenario:Deleting contact
+Given Main page is opened
+When Click delete buttn for contact &lt;contact&gt;
+Then New contact &lt;contact&gt; deleted and not displayed on main page
+
+
+</scenarios>
+      <passed>true</passed>
+      <pending>false</pending>
+      <started>1424973836425</started>
+      <duration>15154</duration>
+    </story>
+  </stories>
+  <stepMatches/>
+</xref>
